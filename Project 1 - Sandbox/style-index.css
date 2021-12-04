@@ -7,49 +7,63 @@ body{
   font-family: 'Poppins', sans-serif;
 }
 
-.nav {
-  max-width: 800;
+/* Utilities */
+.container{
+  max-width: 800px;
   margin: auto;
-  position: sticky;
-  top: 0;
-}
-
-.navbg {
-  background: #318ce7;
-}
-
-.navbar {
-  list-style: none;
-  padding: 0px;
-  background: transparent;
   overflow: auto;
-}
-
-.navbar li {
-  display: inline;
-}
-
-.navbar li a {
+  padding: 0px 20px;
   
-  display: inline-block;
-  color: #fff;
-  text-decoration: none;
-  padding: 15px 20px;
 
 }
 
-.navbar li a:hover{
+/* Navbar */
+#header {
+  position: sticky;
+  top:0;
+}
+
+#navbar {
+  
+  margin: auto;
+  background: #318ce7;
+  color: #fff;
+  overflow: auto;
+  
+}
+
+#navbar a {
+  color: #fff;
+}
+
+#navbar ul {
+  list-style: none;
+  float: left;  
+  margin-left: 10px;
+ 
+}
+
+#navbar ul li {
+  float: left;
+  
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
   background-color: #537fbb;
   color: #f4f4f4;
 }
 
 
 
-.container{
-  max-width: 800px;
-  margin: auto;
-
-}
+/* Body */
 
 .journey{
   color: #333;
@@ -88,7 +102,7 @@ h2 {
   font-size: 16px;
   padding: 10px;
   margin: 10px;
-  border-radius: 5px;
+  
 
   cursor: pointer;
 }
